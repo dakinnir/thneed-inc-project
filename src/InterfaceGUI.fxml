@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InterfaceGUIController">
+   <children>
+      <Button fx:id="addOrderButton" layoutX="431.0" layoutY="281.0" mnemonicParsing="false" onAction="#addOrderButtonClick" prefHeight="31.0" prefWidth="124.0" text="Create Order" />
+      <Label layoutX="10.0" layoutY="40.0" text="Customer ID:" />
+      <TextField fx:id="custField" layoutX="109.0" layoutY="35.0" />
+      <Label layoutX="31.0" layoutY="77.0" text="Name:" />
+      <TextField fx:id="nameField" layoutX="109.0" layoutY="72.0" />
+      <TextField fx:id="adField" layoutX="109.0" layoutY="110.0" />
+      <TextField fx:id="phoneField" layoutX="109.0" layoutY="147.0" />
+      <Label layoutX="31.0" layoutY="115.0" text="Address:" />
+      <Label layoutX="32.0" layoutY="152.0" text="Phone:" />
+      <Button fx:id="custButton" layoutX="122.0" layoutY="184.0" mnemonicParsing="false" onAction="#addCustomerButtonClick" prefHeight="31.0" prefWidth="124.0" text="Create Customer" />
+      <Line endX="-100.0" endY="286.0" layoutX="432.0" layoutY="20.0" startX="-100.0" startY="-7.0" />
+      <Label layoutX="362.0" layoutY="39.0" text="Order ID:" />
+      <Label layoutX="342.0" layoutY="89.0" text="Customer ID:" />
+      <TextField fx:id="orderField" layoutX="438.0" layoutY="35.0" prefHeight="25.0" prefWidth="171.0" />
+      <Button fx:id="viewOrderButton" layoutX="431.0" layoutY="325.0" mnemonicParsing="false" onAction="#viewOrderButtonClick" prefHeight="31.0" prefWidth="124.0" text="View All Orders" />
+      <ComboBox fx:id="custBox" layoutX="438.0" layoutY="83.0" prefHeight="31.0" prefWidth="171.0" />
+      <Button fx:id="saveToFileButton" layoutX="17.0" layoutY="256.0" mnemonicParsing="false" onAction="#saveToFileButtonClick" prefHeight="31.0" prefWidth="124.0" text="Save To File" />
+      <Button fx:id="loadFromFileButton" layoutX="184.0" layoutY="256.0" mnemonicParsing="false" onAction="#loadFromFileButtonClick" prefHeight="31.0" prefWidth="124.0" text="Load From File" />
+      <Spinner fx:id="quantity" layoutX="404.0" layoutY="169.0" prefHeight="17.0" prefWidth="59.0" />
+      <RadioButton fx:id="orangeColor" layoutX="404.0" layoutY="127.0" mnemonicParsing="false" text="Orange">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="color" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="greenColor" layoutX="476.0" layoutY="127.0" mnemonicParsing="false" text="Green" toggleGroup="$color">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="345.0" layoutY="174.0" text="Quantity:" />
+      <RadioButton fx:id="blueColor" layoutX="539.0" layoutY="127.0" mnemonicParsing="false" text="Blue" toggleGroup="$color">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="342.0" layoutY="128.0" text="Color:" />
+      <RadioButton fx:id="smallSize" layoutX="392.0" layoutY="226.0" mnemonicParsing="false" text="Small">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="size" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="mediumSize" layoutX="464.0" layoutY="226.0" mnemonicParsing="false" text="Medium" toggleGroup="$size">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="345.0" layoutY="226.0" text="Size:" />
+      <RadioButton fx:id="largeSize" layoutX="544.0" layoutY="226.0" mnemonicParsing="false" text="Large" toggleGroup="$size">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="inventory" layoutX="431.0" layoutY="368.0" mnemonicParsing="false" onAction="#inventoryButtonClicked" prefHeight="31.0" prefWidth="124.0" text="Inventory" />
+   </children>
+</AnchorPane>

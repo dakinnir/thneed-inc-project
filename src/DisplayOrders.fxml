@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="408.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DisplayOrdersController">
+   <children>
+      <Label layoutX="306.0" layoutY="53.0" text="Customer:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="306.0" layoutY="106.0" text="Order ID:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="306.0" layoutY="212.0" text="Date Ordered:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="306.0" layoutY="264.0" text="Date Filled:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="nameField" layoutX="422.0" layoutY="53.0" text="&lt;name&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="orderIDField" layoutX="422.0" layoutY="106.0" text="&lt;name&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="dateOrderedField" layoutX="422.0" layoutY="212.0" text="&lt;name&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateFilledField" layoutX="422.0" layoutY="264.0" text="&lt;name&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="editDateFilledButton" layoutX="392.0" layoutY="329.0" mnemonicParsing="false" onAction="#editDateFilledClick" prefHeight="30.0" prefWidth="184.0" text="Mark Order As Completed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="orderField" layoutX="7.0" layoutY="9.0" onMouseClicked="#switchOrder" prefHeight="391.0" prefWidth="280.0" />
+      <Label layoutX="306.0" layoutY="154.0" text="Order Details:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderDetails" layoutX="422.0" layoutY="154.0" text="&lt;name&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnBack" layoutX="596.0" layoutY="329.0" mnemonicParsing="false" onAction="#returnBackButtonClicked" prefHeight="30.0" prefWidth="184.0" text="Return to Previous Window">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>
