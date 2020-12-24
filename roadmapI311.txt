@@ -1,0 +1,71 @@
+Repository: https://github.iu.edu/pmores/Mantifest-Interface.git
+
+Roles:
+Architect - Parker
+Tester - Jason
+Document/Repo - Arjun
+
+Class Leader:
+Order - Parker
+GUI - Jason
+Customer - Arjun
+
+
+Roadmap:
+10/18 - 10/24:
+Jason: Create visuals for GUI in SceneBuilder
+Parker: Decide what functions each class should have 
+Arjun: Ensure branches and master are set up correctly and documentation is upkept.
+
+10/25 - 10/31:
+Jason: Start implementing the JavaFX controller and fxID's
+Parker: Start implementing the Order class and functions
+Arjun: Start implementing the Customer class and functions
+
+11/1 - 11/7:
+Jason: Finish implementing the GUI and File I/O 
+Parker: Finish Order class and help Jason with I/O
+Arjun: Finish implementing Customer and make sure merges and documentation looks clean on all files.
+
+
+11/8 - 11/13:
+All: Start working on recording the video and submit it at least a day early
+
+
+Customer Class:
+	Instance Variables:
+		- (String) Name
+		- (String) Address
+		- (String) Phone Number
+		- (String) Customer ID #
+		- (ArrayList) List of Orders
+	Functions:
+		- Constructor that takes in Name, Address, Phone Number, and Customer ID #. (orders will be created through a function)
+		- Getters for all instance variables
+		- (void) Function to add an order to the customer's list of orders.
+		
+		
+Thneed Class:	*** MIGHT NOT NEED ***
+	Instance Variables:
+		- (Double) Size
+		- (String) Color
+	Functions: 
+		- Constructor that takes in size and color
+		
+Order Class:
+	Instance Variables:
+		- (String) Order #
+		- (ArrayList) A list of Thneeds
+		- (Customer) Customer who ordered
+		- (Date) Date the object was ordered
+		- (Date) Date object was filled
+		- (Boolean) Boolean stating whether the order has been fulfilled or not
+	Functions:
+		- Getters for each instance variable
+		- Set the date of when the object was fulfilled
+		- Set fulfilled to true or false 
+		
+
+
+	
+Serialization: https://www.tutorialspoint.com/java/java_serialization.htm
